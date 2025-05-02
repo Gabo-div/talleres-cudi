@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="portafolio.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Gabriel Hernández</h1>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/gabriel-h-valles/"
+            target="_blank"
+            rel="noreferrer"
+            >Linkedin</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/Gabo-div" target="_blank" rel="noreferrer"
+            >Github</a
+          >
+        </li>
+        <li>
+          <a href="mailto:gabriel@gmail.com">Correo</a>
+        </li>
+        <li>
+          <a href="tel:+58000000">Llamar</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <aside>
+        <nav class="links">
+          <a href="#about">Sobre Mi</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#education">Educación</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </aside>
+
+      <div class="content">
+        <section id="about">
+          <h2>Sobre Mi</h2>
+          <div class="about">
+            <p>
+              Hola, soy Gabriel Hernández y soy un programador al cual le gusta
+              mucho HTML.
+            </p>
+            <img
+              alt="yo mismo pues"
+              src="https://gabrielvalles.vercel.app/_astro/avatar.hdXN_rBI_Z5DR6Q.webp"
+            />
+          </div>
+        </section>
+
+        <section id="projects">
+          <h2>Proyectos</h2>
+          <div class="projects">
+            <article>
+              <h3>Página web de la nasa</h3>
+              <p>
+                Me llamaron de los united state para programar la pagina web de
+                la nasa tremenda experiencia la verdad.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </article>
+            <article>
+              <h3>Página web de la nasa</h3>
+              <p>
+                Me llamaron de los united state para programar la pagina web de
+                la nasa tremenda experiencia la verdad.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </article>
+
+            <article>
+              <h3>Página web de patria</h3>
+              <p>
+                Maduro tambien me llamo para hacer la página web para los bonos
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </article>
+
+            <article>
+              <h3>Página web de patria</h3>
+              <p>
+                Maduro tambien me llamo para hacer la página web para los bonos
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="education">
+          <h3>Educación</h3>
+          <article class="education">
+            <h3>Universidad Nacional Experimental de Guayana</h3>
+            <p>Estudio Informatica</p>
+            <p>2021- Presente</p>
+          </article>
+        </section>
+
+        <section id="contact">
+          <h2>Contactame</h2>
+
+          <form method="post" action="/contacto" class="contact">
+            <fieldset>
+              <legend>Información Personal</legend>
+
+              <div class="input">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+
+              <div class="input">
+                <label for="corre">Correo</label>
+                <input
+                  type="email"
+                  name="correo"
+                  id="correo"
+                  placeholder="johndoe@gmail.com"
+                  required
+                />
+              </div>
+
+              <div class="input">
+                <label for="numero">Numero</label>
+                <input
+                  type="tel"
+                  name="numero"
+                  id="numero"
+                  placeholder="+58 000000000"
+                />
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Informacion</legend>
+              <div class="input">
+                <div>
+                  <label for="mensaje">Mensaje</label>
+                </div>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  placeholder="Escribe tu mensaje"
+                ></textarea>
+              </div>
+
+              <div>
+                <label for="trabajo">Que tipo de trabajo quieres?</label>
+
+                <select id="trabajo" name="trabajo" placeholder="si">
+                  <option value="">-- Seleciona una opción --</option>
+                  <option value="pagina">Página web</option>
+                  <option value="movil">Aplicación Móvil</option>
+                  <option value="escritorio">Aplicación de escritorio</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Preferencia de pago</legend>
+
+              <div class="radio">
+                <input type="radio" name="pago" id="paypal" checked />
+                <label for="paypal">Paypal</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" name="pago" id="binance" />
+                <label for="binance">Binance</label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Que lenguajes quieres que use?</legend>
+
+              <div class="check">
+                <input type="checkbox" name="html" id="html" />
+                <label for="html">HTML</label>
+              </div>
+
+              <div class="check">
+                <input type="checkbox" name="css" id="css" />
+                <label for="css">CSS</label>
+              </div>
+
+              <div class="check">
+                <input type="checkbox" name="js" id="js" />
+                <label for="js">Javascript</label>
+              </div>
+            </fieldset>
+
+            <div class="buttons">
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Vaciar" />
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <small> Todos los derechos resevados &copy; 2025 </small>
+    </footer>
+  </body>
+</html>
