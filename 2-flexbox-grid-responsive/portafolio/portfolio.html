@@ -125,99 +125,103 @@
           <h2>Contactame</h2>
 
           <form method="post" action="/contacto" class="contact">
-            <fieldset>
-              <legend>Información Personal</legend>
+            <div class="form-info">
+              <fieldset>
+                <legend>Información Personal</legend>
 
-              <div class="input">
-                <label for="nombre">Nombre</label>
-                <input
-                  type="text"
-                  name="nombre"
-                  id="nombre"
-                  placeholder="John Doe"
-                  required
-                />
-              </div>
-
-              <div class="input">
-                <label for="corre">Correo</label>
-                <input
-                  type="email"
-                  name="correo"
-                  id="correo"
-                  placeholder="johndoe@gmail.com"
-                  required
-                />
-              </div>
-
-              <div class="input">
-                <label for="numero">Numero</label>
-                <input
-                  type="tel"
-                  name="numero"
-                  id="numero"
-                  placeholder="+58 000000000"
-                />
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <legend>Informacion</legend>
-              <div class="input">
-                <div>
-                  <label for="mensaje">Mensaje</label>
+                <div class="input">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    name="nombre"
+                    id="nombre"
+                    placeholder="John Doe"
+                    required
+                  />
                 </div>
-                <textarea
-                  name="mensaje"
-                  id="mensaje"
-                  placeholder="Escribe tu mensaje"
-                ></textarea>
-              </div>
 
-              <div>
-                <label for="trabajo">Que tipo de trabajo quieres?</label>
+                <div class="input">
+                  <label for="corre">Correo</label>
+                  <input
+                    type="email"
+                    name="correo"
+                    id="correo"
+                    placeholder="johndoe@gmail.com"
+                    required
+                  />
+                </div>
 
-                <select id="trabajo" name="trabajo" placeholder="si">
-                  <option value="">-- Seleciona una opción --</option>
-                  <option value="pagina">Página web</option>
-                  <option value="movil">Aplicación Móvil</option>
-                  <option value="escritorio">Aplicación de escritorio</option>
-                </select>
-              </div>
-            </fieldset>
+                <div class="input">
+                  <label for="numero">Numero</label>
+                  <input
+                    type="tel"
+                    name="numero"
+                    id="numero"
+                    placeholder="+58 000000000"
+                  />
+                </div>
+              </fieldset>
 
-            <fieldset>
-              <legend>Preferencia de pago</legend>
+              <fieldset>
+                <legend>Informacion</legend>
+                <div class="input">
+                  <div>
+                    <label for="mensaje">Mensaje</label>
+                  </div>
+                  <textarea
+                    name="mensaje"
+                    id="mensaje"
+                    placeholder="Escribe tu mensaje"
+                  ></textarea>
+                </div>
 
-              <div class="radio">
-                <input type="radio" name="pago" id="paypal" checked />
-                <label for="paypal">Paypal</label>
-              </div>
+                <div>
+                  <label for="trabajo">Que tipo de trabajo quieres?</label>
 
-              <div class="radio">
-                <input type="radio" name="pago" id="binance" />
-                <label for="binance">Binance</label>
-              </div>
-            </fieldset>
+                  <select id="trabajo" name="trabajo" placeholder="si">
+                    <option value="">-- Seleciona una opción --</option>
+                    <option value="pagina">Página web</option>
+                    <option value="movil">Aplicación Móvil</option>
+                    <option value="escritorio">Aplicación de escritorio</option>
+                  </select>
+                </div>
+              </fieldset>
+            </div>
 
-            <fieldset>
-              <legend>Que lenguajes quieres que use?</legend>
+            <div class="preferences">
+              <fieldset>
+                <legend>Preferencia de pago</legend>
 
-              <div class="check">
-                <input type="checkbox" name="html" id="html" />
-                <label for="html">HTML</label>
-              </div>
+                <div class="radio">
+                  <input type="radio" name="pago" id="paypal" checked />
+                  <label for="paypal">Paypal</label>
+                </div>
 
-              <div class="check">
-                <input type="checkbox" name="css" id="css" />
-                <label for="css">CSS</label>
-              </div>
+                <div class="radio">
+                  <input type="radio" name="pago" id="binance" />
+                  <label for="binance">Binance</label>
+                </div>
+              </fieldset>
 
-              <div class="check">
-                <input type="checkbox" name="js" id="js" />
-                <label for="js">Javascript</label>
-              </div>
-            </fieldset>
+              <fieldset>
+                <legend>Que lenguajes quieres que use?</legend>
+
+                <div class="check">
+                  <input type="checkbox" name="html" id="html" />
+                  <label for="html">HTML</label>
+                </div>
+
+                <div class="check">
+                  <input type="checkbox" name="css" id="css" />
+                  <label for="css">CSS</label>
+                </div>
+
+                <div class="check">
+                  <input type="checkbox" name="js" id="js" />
+                  <label for="js">Javascript</label>
+                </div>
+              </fieldset>
+            </div>
 
             <div class="buttons">
               <input type="submit" value="Enviar" />

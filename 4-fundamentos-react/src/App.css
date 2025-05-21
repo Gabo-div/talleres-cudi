@@ -1,0 +1,59 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.twitter-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.twitter-card img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+
+.twitter-card div {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+
+.twitter-card div p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.twitter-card button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.twitter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.board .square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
